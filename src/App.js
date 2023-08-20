@@ -36,7 +36,7 @@ if(e.keyCode===13)
 {
   const x=e.currentTarget.value;
   console.log("ki");
-  const t = await getFormattedWeatherData(x,document.getElementById("btn").innerText.slice(1)==='C'? 'imperial' : 'metric'));
+  const t = await getFormattedWeatherData(x,document.getElementById("btn").innerText.slice(1)==='C'?  'metric' : 'imperial' ));
   
   console.log("t:", t);
   if(t===null || t===undefined){
@@ -65,7 +65,7 @@ setUnits(currentUnit==='C' ? 'metric' : 'imperial')
 {weather  && (<div className="container">
 <div className="section section__inputs">
 <input onKeyDown={(e)=>enterkeypressed(e)} type="text" name="city" placeholder="Enter city .."/>
-<button onClick={(e)=>handlecl(e) } id="btn">℉</button>
+<button onClick={(e)=>handlecl(e) } id="btn">`°${units==='metric' ? 'C':'F'}`</button>
 </div>
 <div className="section section__temperature">
   <div className="icon">

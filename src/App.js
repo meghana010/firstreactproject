@@ -54,7 +54,7 @@ if(e.keyCode===13)
     const button=e.currentTarget;
    const currentUnit = button.innerText.slice(1);
 button.innerText=currentUnit==='C'? '℉' : '℃';
-setUnits(currentUnit==='C' ? 'metric' : 'imperial')
+setUnits(currentUnit==='C' ? 'metric' : 'imperial');
   };
   return (
     <div className="app"  style={{backgroundImage:`url(${bg})`}}>

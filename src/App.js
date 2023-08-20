@@ -65,7 +65,7 @@ setUnits(currentUnit==='C' ? 'metric' : 'imperial')
 {weather  && (<div className="container">
 <div className="section section__inputs">
 <input onKeyDown={(e)=>enterkeypressed(e)} type="text" name="city" placeholder="Enter city .."/>
-<button onClick={(e)=>handlecl(e) } id="btn">`°${units==='metric' ? 'C':'F'}`</button>
+<button onClick={(e)=>handlecl(e) } id="btn">{`°${units==='metric' ? 'F':'C'}`}</button>
 </div>
 <div className="section section__temperature">
   <div className="icon">

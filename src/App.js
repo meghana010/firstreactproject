@@ -36,7 +36,7 @@ if(e.keyCode===13)
 {
   const x=e.currentTarget.value;
   console.log("ki");
-  const t = await getFormattedWeatherData(x,document.getElementById("btn").innerText.slice(1)==='C'?'metric':'imperial');
+  const t = await getFormattedWeatherData(x,document.getElementById("btn").innerText.slice(1)==='C'? 'imperial' : 'metric'));
   
   console.log("t:", t);
   if(t===null || t===undefined){

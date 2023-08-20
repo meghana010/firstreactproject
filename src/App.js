@@ -15,7 +15,7 @@ function App() {
       if(data===null || data===undefined)
       return;
       setWeather(data);
-      const threshold='metric'? 20 :70;
+      const threshold=units==='metric'? 20 :70;
         if(data.temp<=threshold)
         {
           setBg(cl);
